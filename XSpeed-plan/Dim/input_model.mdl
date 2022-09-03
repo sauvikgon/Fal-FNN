@@ -1,0 +1,8660 @@
+
+#Variables
+t
+x1
+x2
+x3
+x4
+xc1
+xc2
+#End
+
+
+#Location
+Locname: L0000
+
+LocId: 1
+
+Inv: x1 >= 0.0 & x1 <= 1.0 & x2 >= 0.0 & x2 <= 1.0 & xc1 >= -0.6 & xc1 <= 0.6 & xc2 >= -0.5 & xc2 <= 0.5 & x3 >= 0.0 & x3 <= 1.0 & x4 >= 0.0 & x4 <= 1.0
+
+Flow:
+    t = 1.0
+    x1 = xc1
+    x2 = 1.2
+    x3 = xc2
+    x4 = 1.1
+#End
+
+Transition:
+
+    Dest: L1000
+
+    DestId: 28
+
+    Label: tau
+
+    Guard: t >= 0.0 & x1 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0100
+
+    DestId: 10
+
+    Label: tau
+
+    Guard: t >= 0.0 & x2 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0010
+
+    DestId: 4
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0001
+
+    DestId: 2
+
+    Label: tau
+
+    Guard: t >= 0.0 & x4 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+#End
+#Location
+Locname: L0001
+
+LocId: 2
+
+Inv: x1 >= 0.0 & x1 <= 1.0 & x2 >= 0.0 & x2 <= 1.0 & xc1 >= -0.6 & xc1 <= 0.6 & x3 >= 0.0 & x3 <= 1.0 & x4 >= 1.0 & x4 <= 2.0
+
+Flow:
+    t = 1.0
+    x1 = xc1
+    x2 = 1.2
+    x3 = 0.2
+    x4 = 1.2
+#End
+
+Transition:
+
+    Dest: L1001
+
+    DestId: 29
+
+    Label: tau
+
+    Guard: t >= 0.0 & x1 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0101
+
+    DestId: 11
+
+    Label: tau
+
+    Guard: t >= 0.0 & x2 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0011
+
+    DestId: 5
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0000
+
+    DestId: 1
+
+    Label: tau
+
+    Guard: t >= 0.0 & x4 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0002
+
+    DestId: 3
+
+    Label: tau
+
+    Guard: t >= 0.0 & x4 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+#End
+#Location
+Locname: L0002
+
+LocId: 3
+
+Inv: x1 >= 0.0 & x1 <= 1.0 & x2 >= 0.0 & x2 <= 1.0 & xc1 >= -0.6 & xc1 <= 0.6 & x3 >= 0.0 & x3 <= 1.0 & x4 >= 2.0 & x4 <= 3.0
+
+Flow:
+    t = 1.0
+    x1 = xc1
+    x2 = 1.2
+    x3 = 1.3
+    x4 = 0.2
+#End
+
+Transition:
+
+    Dest: L1002
+
+    DestId: 30
+
+    Label: tau
+
+    Guard: t >= 0.0 & x1 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0102
+
+    DestId: 12
+
+    Label: tau0
+
+    Guard: t >= 0.0 & x2 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0012
+
+    DestId: 6
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0001
+
+    DestId: 2
+
+    Label: tau
+
+    Guard: t >= 0.0 & x4 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+#End
+#Location
+Locname: L0010
+
+LocId: 4
+
+Inv: x1 >= 0.0 & x1 <= 1.0 & x2 >= 0.0 & x2 <= 1.0 & xc1 >= -0.6 & xc1 <= 0.6 & x3 >= 1.0 & x3 <= 2.0 & x4 >= 0.0 & x4 <= 1.0
+
+Flow:
+    t = 1.0
+    x1 = xc1
+    x2 = 1.2
+    x3 = -1.3
+    x4 = -0.2
+#End
+
+Transition:
+
+    Dest: L1010
+
+    DestId: 31
+
+    Label: tau
+
+    Guard: t >= 0.0 & x1 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0110
+
+    DestId: 13
+
+    Label: tau
+
+    Guard: t >= 0.0 & x2 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0000
+
+    DestId: 1
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0020
+
+    DestId: 7
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0011
+
+    DestId: 5
+
+    Label: tau
+
+    Guard: t >= 0.0 & x4 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+#End
+#Location
+Locname: L0011
+
+LocId: 5
+
+Inv: x1 >= 0.0 & x1 <= 1.0 & x2 >= 0.0 & x2 <= 1.0 & xc1 >= -0.6 & xc1 <= 0.6 & x3 >= 1.0 & x3 <= 2.0 & x4 >= 1.0 & x4 <= 2.0
+
+Flow:
+    t = 1.0
+    x1 = xc1
+    x2 = 1.2
+    x3 = 1.3
+    x4 = -0.2
+#End
+
+Transition:
+
+    Dest: L1011
+
+    DestId: 32
+
+    Label: tau
+
+    Guard: t >= 0.0 & x1 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0111
+
+    DestId: 14
+
+    Label: tau
+
+    Guard: t >= 0.0 & x2 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0001
+
+    DestId: 2
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0021
+
+    DestId: 8
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0010
+
+    DestId: 4
+
+    Label: tau
+
+    Guard: t >= 0.0 & x4 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0012
+
+    DestId: 6
+
+    Label: tau
+
+    Guard: t >= 0.0 & x4 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+#End
+#Location
+Locname: L0012
+
+LocId: 6
+
+Inv: x1 >= 0.0 & x1 <= 1.0 & x2 >= 0.0 & x2 <= 1.0 & xc1 >= -0.6 & xc1 <= 0.6 & x3 >= 1.0 & x3 <= 2.0 & x4 >= 2.0 & x4 <= 3.0
+
+Flow:
+    t = 1.0
+    x1 = xc1
+    x2 = 1.2
+    x3 = 0.3
+    x4 = -1.0
+#End
+
+Transition:
+
+    Dest: L1012
+
+    DestId: 33
+
+    Label: tau0
+
+    Guard: t >= 0.0 & x1 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0112
+
+    DestId: 15
+
+    Label: tau
+
+    Guard: t >= 0.0 & x2 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0002
+
+    DestId: 3
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0022
+
+    DestId: 9
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0011
+
+    DestId: 5
+
+    Label: tau
+
+    Guard: t >= 0.0 & x4 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+#End
+#Location
+Locname: L0020
+
+LocId: 7
+
+Inv: x1 >= 0.0 & x1 <= 1.0 & x2 >= 0.0 & x2 <= 1.0 & xc1 >= -0.6 & xc1 <= 0.6 & x3 >= 2.0 & x3 <= 3.0 & x4 >= 0.0 & x4 <= 1.0
+
+Flow:
+    t = 1.0
+    x1 = xc1
+    x2 = 1.2
+    x3 = -1.3
+    x4 = -0.2
+#End
+
+Transition:
+
+    Dest: L1020
+
+    DestId: 34
+
+    Label: tau
+
+    Guard: t >= 0.0 & x1 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0120
+
+    DestId: 16
+
+    Label: tau
+
+    Guard: t >= 0.0 & x2 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0010
+
+    DestId: 4
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0021
+
+    DestId: 8
+
+    Label: tau
+
+    Guard: t >= 0.0 & x4 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+#End
+#Location
+Locname: L0021
+
+LocId: 8
+
+Inv: x1 >= 0.0 & x1 <= 1.0 & x2 >= 0.0 & x2 <= 1.0 & xc1 >= -0.6 & xc1 <= 0.6 & x3 >= 2.0 & x3 <= 3.0 & x4 >= 1.0 & x4 <= 2.0
+
+Flow:
+    t = 1.0
+    x1 = xc1
+    x2 = 1.2
+    x3 = 1.0
+    x4 = -1.3
+#End
+
+Transition:
+
+    Dest: L1021
+
+    DestId: 35
+
+    Label: tau
+
+    Guard: t >= 0.0 & x1 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0121
+
+    DestId: 17
+
+    Label: tau
+
+    Guard: t >= 0.0 & x2 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0011
+
+    DestId: 5
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0020
+
+    DestId: 7
+
+    Label: tau
+
+    Guard: t >= 0.0 & x4 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0022
+
+    DestId: 9
+
+    Label: tau
+
+    Guard: t >= 0.0 & x4 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+#End
+#Location
+Locname: L0022
+
+LocId: 9
+
+Inv: x1 >= 0.0 & x1 <= 1.0 & x2 >= 0.0 & x2 <= 1.0 & xc1 >= -0.6 & xc1 <= 0.6 & x3 >= 2.0 & x3 <= 3.0 & x4 >= 2.0 & x4 <= 3.0
+
+Flow:
+    t = 1.0
+    x1 = xc1
+    x2 = 1.2
+    x3 = 1.0
+    x4 = 1.0
+#End
+
+Transition:
+
+    Dest: L1022
+
+    DestId: 36
+
+    Label: tau
+
+    Guard: t >= 0.0 & x1 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0122
+
+    DestId: 18
+
+    Label: tau0
+
+    Guard: t >= 0.0 & x2 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0012
+
+    DestId: 6
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0021
+
+    DestId: 8
+
+    Label: tau
+
+    Guard: t >= 0.0 & x4 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+#End
+#Location
+Locname: L0100
+
+LocId: 10
+
+Inv: x1 >= 0.0 & x1 <= 1.0 & x2 >= 1.0 & x2 <= 2.0 & xc2 >= -0.5 & xc2 <= 0.5 & x3 >= 0.0 & x3 <= 1.0 & x4 >= 0.0 & x4 <= 1.0
+
+Flow:
+    t = 1.0
+    x1 = 0.1
+    x2 = 1.3
+    x3 = xc2
+    x4 = 1.1
+#End
+
+Transition:
+
+    Dest: L1100
+
+    DestId: 37
+
+    Label: tau
+
+    Guard: t >= 0.0 & x1 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0000
+
+    DestId: 1
+
+    Label: tau
+
+    Guard: t >= 0.0 & x2 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0200
+
+    DestId: 19
+
+    Label: tau
+
+    Guard: t >= 0.0 & x2 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0110
+
+    DestId: 13
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0101
+
+    DestId: 11
+
+    Label: tau
+
+    Guard: t >= 0.0 & x4 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+#End
+#Location
+Locname: L0101
+
+LocId: 11
+
+Inv: x1 >= 0.0 & x1 <= 1.0 & x2 >= 1.0 & x2 <= 2.0 & x3 >= 0.0 & x3 <= 1.0 & x4 >= 1.0 & x4 <= 2.0
+
+Flow:
+    t = 1.0
+    x1 = 0.1
+    x2 = 1.3
+    x3 = 0.2
+    x4 = 1.2
+#End
+
+Transition:
+
+    Dest: L1101
+
+    DestId: 38
+
+    Label: tau
+
+    Guard: t >= 0.0 & x1 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0001
+
+    DestId: 2
+
+    Label: tau
+
+    Guard: t >= 0.0 & x2 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0201
+
+    DestId: 20
+
+    Label: tau
+
+    Guard: t >= 0.0 & x2 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0111
+
+    DestId: 14
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0100
+
+    DestId: 10
+
+    Label: tau
+
+    Guard: t >= 0.0 & x4 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0102
+
+    DestId: 12
+
+    Label: tau
+
+    Guard: t >= 0.0 & x4 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+#End
+#Location
+Locname: L0102
+
+LocId: 12
+
+Inv: x1 >= 0.0 & x1 <= 1.0 & x2 >= 1.0 & x2 <= 2.0 & x3 >= 0.0 & x3 <= 1.0 & x4 >= 2.0 & x4 <= 3.0
+
+Flow:
+    t = 1.0
+    x1 = 0.1
+    x2 = 1.3
+    x3 = 1.3
+    x4 = 0.2
+#End
+
+Transition:
+
+    Dest: L1102
+
+    DestId: 39
+
+    Label: tau
+
+    Guard: t >= 0.0 & x1 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0002
+
+    DestId: 3
+
+    Label: tau0
+
+    Guard: t >= 0.0 & x2 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0202
+
+    DestId: 21
+
+    Label: tau0
+
+    Guard: t >= 0.0 & x2 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0112
+
+    DestId: 15
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0101
+
+    DestId: 11
+
+    Label: tau
+
+    Guard: t >= 0.0 & x4 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+#End
+#Location
+Locname: L0110
+
+LocId: 13
+
+Inv: x1 >= 0.0 & x1 <= 1.0 & x2 >= 1.0 & x2 <= 2.0 & x3 >= 1.0 & x3 <= 2.0 & x4 >= 0.0 & x4 <= 1.0
+
+Flow:
+    t = 1.0
+    x1 = 0.1
+    x2 = 1.3
+    x3 = -1.3
+    x4 = -0.2
+#End
+
+Transition:
+
+    Dest: L1110
+
+    DestId: 40
+
+    Label: tau
+
+    Guard: t >= 0.0 & x1 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0010
+
+    DestId: 4
+
+    Label: tau
+
+    Guard: t >= 0.0 & x2 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0210
+
+    DestId: 22
+
+    Label: tau
+
+    Guard: t >= 0.0 & x2 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0100
+
+    DestId: 10
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0120
+
+    DestId: 16
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0111
+
+    DestId: 14
+
+    Label: tau
+
+    Guard: t >= 0.0 & x4 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+#End
+#Location
+Locname: L0111
+
+LocId: 14
+
+Inv: x1 >= 0.0 & x1 <= 1.0 & x2 >= 1.0 & x2 <= 2.0 & x3 >= 1.0 & x3 <= 2.0 & x4 >= 1.0 & x4 <= 2.0
+
+Flow:
+    t = 1.0
+    x1 = 0.1
+    x2 = 1.3
+    x3 = 1.3
+    x4 = -0.2
+#End
+
+Transition:
+
+    Dest: L1111
+
+    DestId: 41
+
+    Label: tau
+
+    Guard: t >= 0.0 & x1 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0011
+
+    DestId: 5
+
+    Label: tau
+
+    Guard: t >= 0.0 & x2 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0211
+
+    DestId: 23
+
+    Label: tau
+
+    Guard: t >= 0.0 & x2 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0101
+
+    DestId: 11
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0121
+
+    DestId: 17
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0110
+
+    DestId: 13
+
+    Label: tau
+
+    Guard: t >= 0.0 & x4 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0112
+
+    DestId: 15
+
+    Label: tau
+
+    Guard: t >= 0.0 & x4 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+#End
+#Location
+Locname: L0112
+
+LocId: 15
+
+Inv: x1 >= 0.0 & x1 <= 1.0 & x2 >= 1.0 & x2 <= 2.0 & x3 >= 1.0 & x3 <= 2.0 & x4 >= 2.0 & x4 <= 3.0
+
+Flow:
+    t = 1.0
+    x1 = 0.1
+    x2 = 1.3
+    x3 = 0.3
+    x4 = -1.0
+#End
+
+Transition:
+
+    Dest: L1112
+
+    DestId: 42
+
+    Label: tau0
+
+    Guard: t >= 0.0 & x1 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0012
+
+    DestId: 6
+
+    Label: tau
+
+    Guard: t >= 0.0 & x2 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0212
+
+    DestId: 24
+
+    Label: tau
+
+    Guard: t >= 0.0 & x2 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0102
+
+    DestId: 12
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0122
+
+    DestId: 18
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0111
+
+    DestId: 14
+
+    Label: tau
+
+    Guard: t >= 0.0 & x4 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+#End
+#Location
+Locname: L0120
+
+LocId: 16
+
+Inv: x1 >= 0.0 & x1 <= 1.0 & x2 >= 1.0 & x2 <= 2.0 & x3 >= 2.0 & x3 <= 3.0 & x4 >= 0.0 & x4 <= 1.0
+
+Flow:
+    t = 1.0
+    x1 = 0.1
+    x2 = 1.3
+    x3 = -1.3
+    x4 = -0.2
+#End
+
+Transition:
+
+    Dest: L1120
+
+    DestId: 43
+
+    Label: tau
+
+    Guard: t >= 0.0 & x1 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0020
+
+    DestId: 7
+
+    Label: tau
+
+    Guard: t >= 0.0 & x2 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0220
+
+    DestId: 25
+
+    Label: tau
+
+    Guard: t >= 0.0 & x2 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0110
+
+    DestId: 13
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0121
+
+    DestId: 17
+
+    Label: tau
+
+    Guard: t >= 0.0 & x4 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+#End
+#Location
+Locname: L0121
+
+LocId: 17
+
+Inv: x1 >= 0.0 & x1 <= 1.0 & x2 >= 1.0 & x2 <= 2.0 & x3 >= 2.0 & x3 <= 3.0 & x4 >= 1.0 & x4 <= 2.0
+
+Flow:
+    t = 1.0
+    x1 = 0.1
+    x2 = 1.3
+    x3 = 1.0
+    x4 = -1.3
+#End
+
+Transition:
+
+    Dest: L1121
+
+    DestId: 44
+
+    Label: tau
+
+    Guard: t >= 0.0 & x1 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0021
+
+    DestId: 8
+
+    Label: tau
+
+    Guard: t >= 0.0 & x2 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0221
+
+    DestId: 26
+
+    Label: tau
+
+    Guard: t >= 0.0 & x2 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0111
+
+    DestId: 14
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0120
+
+    DestId: 16
+
+    Label: tau
+
+    Guard: t >= 0.0 & x4 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0122
+
+    DestId: 18
+
+    Label: tau
+
+    Guard: t >= 0.0 & x4 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+#End
+#Location
+Locname: L0122
+
+LocId: 18
+
+Inv: x1 >= 0.0 & x1 <= 1.0 & x2 >= 1.0 & x2 <= 2.0 & x3 >= 2.0 & x3 <= 3.0 & x4 >= 2.0 & x4 <= 3.0
+
+Flow:
+    t = 1.0
+    x1 = 0.1
+    x2 = 1.3
+    x3 = 1.0
+    x4 = 1.0
+#End
+
+Transition:
+
+    Dest: L1122
+
+    DestId: 45
+
+    Label: tau
+
+    Guard: t >= 0.0 & x1 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0022
+
+    DestId: 9
+
+    Label: tau0
+
+    Guard: t >= 0.0 & x2 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0222
+
+    DestId: 27
+
+    Label: tau0
+
+    Guard: t >= 0.0 & x2 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0112
+
+    DestId: 15
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0121
+
+    DestId: 17
+
+    Label: tau
+
+    Guard: t >= 0.0 & x4 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+#End
+#Location
+Locname: L0200
+
+LocId: 19
+
+Inv: x1 >= 0.0 & x1 <= 1.0 & x2 >= 2.0 & x2 <= 3.0 & xc2 >= -0.5 & xc2 <= 0.5 & x3 >= 0.0 & x3 <= 1.0 & x4 >= 0.0 & x4 <= 1.0
+
+Flow:
+    t = 1.0
+    x1 = 1.3
+    x2 = 0.2
+    x3 = xc2
+    x4 = 1.1
+#End
+
+Transition:
+
+    Dest: L1200
+
+    DestId: 46
+
+    Label: tau
+
+    Guard: t >= 0.0 & x1 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0100
+
+    DestId: 10
+
+    Label: tau
+
+    Guard: t >= 0.0 & x2 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0210
+
+    DestId: 22
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0201
+
+    DestId: 20
+
+    Label: tau
+
+    Guard: t >= 0.0 & x4 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+#End
+#Location
+Locname: L0201
+
+LocId: 20
+
+Inv: x1 >= 0.0 & x1 <= 1.0 & x2 >= 2.0 & x2 <= 3.0 & x3 >= 0.0 & x3 <= 1.0 & x4 >= 1.0 & x4 <= 2.0
+
+Flow:
+    t = 1.0
+    x1 = 1.3
+    x2 = 0.2
+    x3 = 0.2
+    x4 = 1.2
+#End
+
+Transition:
+
+    Dest: L1201
+
+    DestId: 47
+
+    Label: tau
+
+    Guard: t >= 0.0 & x1 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0101
+
+    DestId: 11
+
+    Label: tau
+
+    Guard: t >= 0.0 & x2 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0211
+
+    DestId: 23
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0200
+
+    DestId: 19
+
+    Label: tau
+
+    Guard: t >= 0.0 & x4 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0202
+
+    DestId: 21
+
+    Label: tau
+
+    Guard: t >= 0.0 & x4 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+#End
+#Location
+Locname: L0202
+
+LocId: 21
+
+Inv: x1 >= 0.0 & x1 <= 1.0 & x2 >= 2.0 & x2 <= 3.0 & x3 >= 0.0 & x3 <= 1.0 & x4 >= 2.0 & x4 <= 3.0
+
+Flow:
+    t = 1.0
+    x1 = 1.3
+    x2 = 0.2
+    x3 = 1.3
+    x4 = 0.2
+#End
+
+Transition:
+
+    Dest: L1202
+
+    DestId: 48
+
+    Label: tau
+
+    Guard: t >= 0.0 & x1 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0102
+
+    DestId: 12
+
+    Label: tau
+
+    Guard: t >= 0.0 & x2 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0212
+
+    DestId: 24
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0201
+
+    DestId: 20
+
+    Label: tau
+
+    Guard: t >= 0.0 & x4 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+#End
+#Location
+Locname: L0210
+
+LocId: 22
+
+Inv: x1 >= 0.0 & x1 <= 1.0 & x2 >= 2.0 & x2 <= 3.0 & x3 >= 1.0 & x3 <= 2.0 & x4 >= 0.0 & x4 <= 1.0
+
+Flow:
+    t = 1.0
+    x1 = 1.3
+    x2 = 0.2
+    x3 = -1.3
+    x4 = -0.2
+#End
+
+Transition:
+
+    Dest: L1210
+
+    DestId: 49
+
+    Label: tau
+
+    Guard: t >= 0.0 & x1 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0110
+
+    DestId: 13
+
+    Label: tau0
+
+    Guard: t >= 0.0 & x2 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0200
+
+    DestId: 19
+
+    Label: tau0
+
+    Guard: t >= 0.0 & x3 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0220
+
+    DestId: 25
+
+    Label: tau0
+
+    Guard: t >= 0.0 & x3 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0211
+
+    DestId: 23
+
+    Label: tau
+
+    Guard: t >= 0.0 & x4 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+#End
+#Location
+Locname: L0211
+
+LocId: 23
+
+Inv: x1 >= 0.0 & x1 <= 1.0 & x2 >= 2.0 & x2 <= 3.0 & x3 >= 1.0 & x3 <= 2.0 & x4 >= 1.0 & x4 <= 2.0
+
+Flow:
+    t = 1.0
+    x1 = 1.3
+    x2 = 0.2
+    x3 = 1.3
+    x4 = -0.2
+#End
+
+Transition:
+
+    Dest: L1211
+
+    DestId: 50
+
+    Label: tau
+
+    Guard: t >= 0.0 & x1 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0111
+
+    DestId: 14
+
+    Label: tau
+
+    Guard: t >= 0.0 & x2 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0201
+
+    DestId: 20
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0221
+
+    DestId: 26
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0210
+
+    DestId: 22
+
+    Label: tau
+
+    Guard: t >= 0.0 & x4 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0212
+
+    DestId: 24
+
+    Label: tau
+
+    Guard: t >= 0.0 & x4 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+#End
+#Location
+Locname: L0212
+
+LocId: 24
+
+Inv: x1 >= 0.0 & x1 <= 1.0 & x2 >= 2.0 & x2 <= 3.0 & x3 >= 1.0 & x3 <= 2.0 & x4 >= 2.0 & x4 <= 3.0
+
+Flow:
+    t = 1.0
+    x1 = 1.3
+    x2 = 0.2
+    x3 = 0.3
+    x4 = -1.0
+#End
+
+Transition:
+
+    Dest: L1212
+
+    DestId: 51
+
+    Label: tau
+
+    Guard: t >= 0.0 & x1 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0112
+
+    DestId: 15
+
+    Label: tau
+
+    Guard: t >= 0.0 & x2 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0202
+
+    DestId: 21
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0222
+
+    DestId: 27
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0211
+
+    DestId: 23
+
+    Label: tau
+
+    Guard: t >= 0.0 & x4 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+#End
+#Location
+Locname: L0220
+
+LocId: 25
+
+Inv: x1 >= 0.0 & x1 <= 1.0 & x2 >= 2.0 & x2 <= 3.0 & x3 >= 2.0 & x3 <= 3.0 & x4 >= 0.0 & x4 <= 1.0
+
+Flow:
+    t = 1.0
+    x1 = 1.3
+    x2 = 0.2
+    x3 = -1.3
+    x4 = -0.2
+#End
+
+Transition:
+
+    Dest: L1220
+
+    DestId: 52
+
+    Label: tau
+
+    Guard: t >= 0.0 & x1 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0120
+
+    DestId: 16
+
+    Label: tau
+
+    Guard: t >= 0.0 & x2 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0210
+
+    DestId: 22
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0221
+
+    DestId: 26
+
+    Label: tau
+
+    Guard: t >= 0.0 & x4 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+#End
+#Location
+Locname: L0221
+
+LocId: 26
+
+Inv: x1 >= 0.0 & x1 <= 1.0 & x2 >= 2.0 & x2 <= 3.0 & x3 >= 2.0 & x3 <= 3.0 & x4 >= 1.0 & x4 <= 2.0
+
+Flow:
+    t = 1.0
+    x1 = 1.3
+    x2 = 0.2
+    x3 = 1.0
+    x4 = -1.3
+#End
+
+Transition:
+
+    Dest: L1221
+
+    DestId: 53
+
+    Label: tau
+
+    Guard: t >= 0.0 & x1 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0121
+
+    DestId: 17
+
+    Label: tau0
+
+    Guard: t >= 0.0 & x2 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0211
+
+    DestId: 23
+
+    Label: tau0
+
+    Guard: t >= 0.0 & x3 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0220
+
+    DestId: 25
+
+    Label: tau0
+
+    Guard: t >= 0.0 & x4 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0222
+
+    DestId: 27
+
+    Label: tau0
+
+    Guard: t >= 0.0 & x4 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+#End
+#Location
+Locname: L0222
+
+LocId: 27
+
+Inv: x1 >= 0.0 & x1 <= 1.0 & x2 >= 2.0 & x2 <= 3.0 & x3 >= 2.0 & x3 <= 3.0 & x4 >= 2.0 & x4 <= 3.0
+
+Flow:
+    t = 1.0
+    x1 = 1.3
+    x2 = 0.2
+    x3 = 1.0
+    x4 = 1.0
+#End
+
+Transition:
+
+    Dest: L1222
+
+    DestId: 54
+
+    Label: tau
+
+    Guard: t >= 0.0 & x1 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0122
+
+    DestId: 18
+
+    Label: tau
+
+    Guard: t >= 0.0 & x2 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0212
+
+    DestId: 24
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L0221
+
+    DestId: 26
+
+    Label: tau
+
+    Guard: t >= 0.0 & x4 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+#End
+#Location
+Locname: L1000
+
+LocId: 28
+
+Inv: x1 >= 1.0 & x1 <= 2.0 & x2 >= 0.0 & x2 <= 1.0 & xc2 >= -0.5 & xc2 <= 0.5 & x3 >= 0.0 & x3 <= 1.0 & x4 >= 0.0 & x4 <= 1.0
+
+Flow:
+    t = 1.0
+    x1 = -1.3
+    x2 = -0.2
+    x3 = xc2
+    x4 = 1.1
+#End
+
+Transition:
+
+    Dest: L0000
+
+    DestId: 1
+
+    Label: tau
+
+    Guard: t >= 0.0 & x1 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2000
+
+    DestId: 55
+
+    Label: tau
+
+    Guard: t >= 0.0 & x1 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1100
+
+    DestId: 37
+
+    Label: tau
+
+    Guard: t >= 0.0 & x2 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1010
+
+    DestId: 31
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1001
+
+    DestId: 29
+
+    Label: tau
+
+    Guard: t >= 0.0 & x4 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+#End
+#Location
+Locname: L1001
+
+LocId: 29
+
+Inv: x1 >= 1.0 & x1 <= 2.0 & x2 >= 0.0 & x2 <= 1.0 & x3 >= 0.0 & x3 <= 1.0 & x4 >= 1.0 & x4 <= 2.0
+
+Flow:
+    t = 1.0
+    x1 = -1.3
+    x2 = -0.2
+    x3 = 0.2
+    x4 = 1.2
+#End
+
+Transition:
+
+    Dest: L0001
+
+    DestId: 2
+
+    Label: tau
+
+    Guard: t >= 0.0 & x1 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2001
+
+    DestId: 56
+
+    Label: tau
+
+    Guard: t >= 0.0 & x1 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1101
+
+    DestId: 38
+
+    Label: tau
+
+    Guard: t >= 0.0 & x2 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1011
+
+    DestId: 32
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1000
+
+    DestId: 28
+
+    Label: tau
+
+    Guard: t >= 0.0 & x4 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1002
+
+    DestId: 30
+
+    Label: tau
+
+    Guard: t >= 0.0 & x4 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+#End
+#Location
+Locname: L1002
+
+LocId: 30
+
+Inv: x1 >= 1.0 & x1 <= 2.0 & x2 >= 0.0 & x2 <= 1.0 & x3 >= 0.0 & x3 <= 1.0 & x4 >= 2.0 & x4 <= 3.0
+
+Flow:
+    t = 1.0
+    x1 = -1.3
+    x2 = -0.2
+    x3 = 1.3
+    x4 = 0.2
+#End
+
+Transition:
+
+    Dest: L0002
+
+    DestId: 3
+
+    Label: tau0
+
+    Guard: t >= 0.0 & x1 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2002
+
+    DestId: 57
+
+    Label: tau0
+
+    Guard: t >= 0.0 & x1 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1102
+
+    DestId: 39
+
+    Label: tau
+
+    Guard: t >= 0.0 & x2 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1012
+
+    DestId: 33
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1001
+
+    DestId: 29
+
+    Label: tau
+
+    Guard: t >= 0.0 & x4 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+#End
+#Location
+Locname: L1010
+
+LocId: 31
+
+Inv: x1 >= 1.0 & x1 <= 2.0 & x2 >= 0.0 & x2 <= 1.0 & x3 >= 1.0 & x3 <= 2.0 & x4 >= 0.0 & x4 <= 1.0
+
+Flow:
+    t = 1.0
+    x1 = -1.3
+    x2 = -0.2
+    x3 = -1.3
+    x4 = -0.2
+#End
+
+Transition:
+
+    Dest: L0010
+
+    DestId: 4
+
+    Label: tau
+
+    Guard: t >= 0.0 & x1 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2010
+
+    DestId: 58
+
+    Label: tau
+
+    Guard: t >= 0.0 & x1 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1110
+
+    DestId: 40
+
+    Label: tau
+
+    Guard: t >= 0.0 & x2 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1000
+
+    DestId: 28
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1020
+
+    DestId: 34
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1011
+
+    DestId: 32
+
+    Label: tau
+
+    Guard: t >= 0.0 & x4 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+#End
+#Location
+Locname: L1011
+
+LocId: 32
+
+Inv: x1 >= 1.0 & x1 <= 2.0 & x2 >= 0.0 & x2 <= 1.0 & x3 >= 1.0 & x3 <= 2.0 & x4 >= 1.0 & x4 <= 2.0
+
+Flow:
+    t = 1.0
+    x1 = -1.3
+    x2 = -0.2
+    x3 = 1.3
+    x4 = -0.2
+#End
+
+Transition:
+
+    Dest: L0011
+
+    DestId: 5
+
+    Label: tau
+
+    Guard: t >= 0.0 & x1 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2011
+
+    DestId: 59
+
+    Label: tau
+
+    Guard: t >= 0.0 & x1 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1111
+
+    DestId: 41
+
+    Label: tau
+
+    Guard: t >= 0.0 & x2 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1001
+
+    DestId: 29
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1021
+
+    DestId: 35
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1010
+
+    DestId: 31
+
+    Label: tau00
+
+    Guard: t >= 0.0 & x4 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1012
+
+    DestId: 33
+
+    Label: tau00
+
+    Guard: t >= 0.0 & x4 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+#End
+#Location
+Locname: L1012
+
+LocId: 33
+
+Inv: x1 >= 1.0 & x1 <= 2.0 & x2 >= 0.0 & x2 <= 1.0 & x3 >= 1.0 & x3 <= 2.0 & x4 >= 2.0 & x4 <= 3.0
+
+Flow:
+    t = 1.0
+    x1 = -1.3
+    x2 = -0.2
+    x3 = 0.3
+    x4 = -1.0
+#End
+
+Transition:
+
+    Dest: L0012
+
+    DestId: 6
+
+    Label: tau01
+
+    Guard: t >= 0.0 & x1 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2012
+
+    DestId: 60
+
+    Label: tau01
+
+    Guard: t >= 0.0 & x1 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1112
+
+    DestId: 42
+
+    Label: tau02
+
+    Guard: t >= 0.0 & x2 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1002
+
+    DestId: 30
+
+    Label: tau03
+
+    Guard: t >= 0.0 & x3 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1022
+
+    DestId: 36
+
+    Label: tau03
+
+    Guard: t >= 0.0 & x3 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1011
+
+    DestId: 32
+
+    Label: tau04
+
+    Guard: t >= 0.0 & x4 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+#End
+#Location
+Locname: L1020
+
+LocId: 34
+
+Inv: x1 >= 1.0 & x1 <= 2.0 & x2 >= 0.0 & x2 <= 1.0 & x3 >= 2.0 & x3 <= 3.0 & x4 >= 0.0 & x4 <= 1.0
+
+Flow:
+    t = 1.0
+    x1 = -1.3
+    x2 = -0.2
+    x3 = -1.3
+    x4 = -0.2
+#End
+
+Transition:
+
+    Dest: L0020
+
+    DestId: 7
+
+    Label: tau04
+
+    Guard: t >= 0.0 & x1 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2020
+
+    DestId: 61
+
+    Label: tau04
+
+    Guard: t >= 0.0 & x1 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1120
+
+    DestId: 43
+
+    Label: tau05
+
+    Guard: t >= 0.0 & x2 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1010
+
+    DestId: 31
+
+    Label: tau06
+
+    Guard: t >= 0.0 & x3 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1021
+
+    DestId: 35
+
+    Label: tau06
+
+    Guard: t >= 0.0 & x4 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+#End
+#Location
+Locname: L1021
+
+LocId: 35
+
+Inv: x1 >= 1.0 & x1 <= 2.0 & x2 >= 0.0 & x2 <= 1.0 & x3 >= 2.0 & x3 <= 3.0 & x4 >= 1.0 & x4 <= 2.0
+
+Flow:
+    t = 1.0
+    x1 = -1.3
+    x2 = -0.2
+    x3 = 1.0
+    x4 = -1.3
+#End
+
+Transition:
+
+    Dest: L0021
+
+    DestId: 8
+
+    Label: tau07
+
+    Guard: t >= 0.0 & x1 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2021
+
+    DestId: 62
+
+    Label: tau07
+
+    Guard: t >= 0.0 & x1 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1121
+
+    DestId: 44
+
+    Label: tau08
+
+    Guard: t >= 0.0 & x2 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1011
+
+    DestId: 32
+
+    Label: tau09
+
+    Guard: t >= 0.0 & x3 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1020
+
+    DestId: 34
+
+    Label: tau09
+
+    Guard: t >= 0.0 & x4 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1022
+
+    DestId: 36
+
+    Label: tau09
+
+    Guard: t >= 0.0 & x4 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+#End
+#Location
+Locname: L1022
+
+LocId: 36
+
+Inv: x1 >= 1.0 & x1 <= 2.0 & x2 >= 0.0 & x2 <= 1.0 & x3 >= 2.0 & x3 <= 3.0 & x4 >= 2.0 & x4 <= 3.0
+
+Flow:
+    t = 1.0
+    x1 = -1.3
+    x2 = -0.2
+    x3 = 1.0
+    x4 = 1.0
+#End
+
+Transition:
+
+    Dest: L0022
+
+    DestId: 9
+
+    Label: tau0
+
+    Guard: t >= 0.0 & x1 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2022
+
+    DestId: 63
+
+    Label: tau0
+
+    Guard: t >= 0.0 & x1 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1122
+
+    DestId: 45
+
+    Label: tau
+
+    Guard: t >= 0.0 & x2 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1012
+
+    DestId: 33
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1021
+
+    DestId: 35
+
+    Label: tau
+
+    Guard: t >= 0.0 & x4 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+#End
+#Location
+Locname: L1100
+
+LocId: 37
+
+Inv: x1 >= 1.0 & x1 <= 2.0 & x2 >= 1.0 & x2 <= 2.0 & xc2 >= -0.5 & xc2 <= 0.5 & x3 >= 0.0 & x3 <= 1.0 & x4 >= 0.0 & x4 <= 1.0
+
+Flow:
+    t = 1.0
+    x1 = 1.3
+    x2 = -0.2
+    x3 = xc2
+    x4 = 1.1
+#End
+
+Transition:
+
+    Dest: L0100
+
+    DestId: 10
+
+    Label: tau
+
+    Guard: t >= 0.0 & x1 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2100
+
+    DestId: 64
+
+    Label: tau
+
+    Guard: t >= 0.0 & x1 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1000
+
+    DestId: 28
+
+    Label: tau
+
+    Guard: t >= 0.0 & x2 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1200
+
+    DestId: 46
+
+    Label: tau
+
+    Guard: t >= 0.0 & x2 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1110
+
+    DestId: 40
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1101
+
+    DestId: 38
+
+    Label: tau
+
+    Guard: t >= 0.0 & x4 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+#End
+#Location
+Locname: L1101
+
+LocId: 38
+
+Inv: x1 >= 1.0 & x1 <= 2.0 & x2 >= 1.0 & x2 <= 2.0 & x3 >= 0.0 & x3 <= 1.0 & x4 >= 1.0 & x4 <= 2.0
+
+Flow:
+    t = 1.0
+    x1 = 1.3
+    x2 = -0.2
+    x3 = 0.2
+    x4 = 1.2
+#End
+
+Transition:
+
+    Dest: L0101
+
+    DestId: 11
+
+    Label: tau
+
+    Guard: t >= 0.0 & x1 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2101
+
+    DestId: 65
+
+    Label: tau
+
+    Guard: t >= 0.0 & x1 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1001
+
+    DestId: 29
+
+    Label: tau
+
+    Guard: t >= 0.0 & x2 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1201
+
+    DestId: 47
+
+    Label: tau
+
+    Guard: t >= 0.0 & x2 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1111
+
+    DestId: 41
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1100
+
+    DestId: 37
+
+    Label: tau
+
+    Guard: t >= 0.0 & x4 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1102
+
+    DestId: 39
+
+    Label: tau
+
+    Guard: t >= 0.0 & x4 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+#End
+#Location
+Locname: L1102
+
+LocId: 39
+
+Inv: x1 >= 1.0 & x1 <= 2.0 & x2 >= 1.0 & x2 <= 2.0 & x3 >= 0.0 & x3 <= 1.0 & x4 >= 2.0 & x4 <= 3.0
+
+Flow:
+    t = 1.0
+    x1 = 1.3
+    x2 = -0.2
+    x3 = 1.3
+    x4 = 0.2
+#End
+
+Transition:
+
+    Dest: L0102
+
+    DestId: 12
+
+    Label: tau0
+
+    Guard: t >= 0.0 & x1 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2102
+
+    DestId: 66
+
+    Label: tau0
+
+    Guard: t >= 0.0 & x1 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1002
+
+    DestId: 30
+
+    Label: tau
+
+    Guard: t >= 0.0 & x2 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1202
+
+    DestId: 48
+
+    Label: tau
+
+    Guard: t >= 0.0 & x2 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1112
+
+    DestId: 42
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1101
+
+    DestId: 38
+
+    Label: tau
+
+    Guard: t >= 0.0 & x4 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+#End
+#Location
+Locname: L1110
+
+LocId: 40
+
+Inv: x1 >= 1.0 & x1 <= 2.0 & x2 >= 1.0 & x2 <= 2.0 & x3 >= 1.0 & x3 <= 2.0 & x4 >= 0.0 & x4 <= 1.0
+
+Flow:
+    t = 1.0
+    x1 = 1.3
+    x2 = -0.2
+    x3 = -1.3
+    x4 = -0.2
+#End
+
+Transition:
+
+    Dest: L0110
+
+    DestId: 13
+
+    Label: tau
+
+    Guard: t >= 0.0 & x1 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2110
+
+    DestId: 67
+
+    Label: tau
+
+    Guard: t >= 0.0 & x1 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1010
+
+    DestId: 31
+
+    Label: tau
+
+    Guard: t >= 0.0 & x2 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1210
+
+    DestId: 49
+
+    Label: tau
+
+    Guard: t >= 0.0 & x2 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1100
+
+    DestId: 37
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1120
+
+    DestId: 43
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1111
+
+    DestId: 41
+
+    Label: tau
+
+    Guard: t >= 0.0 & x4 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+#End
+#Location
+Locname: L1111
+
+LocId: 41
+
+Inv: x1 >= 1.0 & x1 <= 2.0 & x2 >= 1.0 & x2 <= 2.0 & x3 >= 1.0 & x3 <= 2.0 & x4 >= 1.0 & x4 <= 2.0
+
+Flow:
+    t = 1.0
+    x1 = 1.3
+    x2 = -0.2
+    x3 = 1.3
+    x4 = -0.2
+#End
+
+Transition:
+
+    Dest: L0111
+
+    DestId: 14
+
+    Label: tau
+
+    Guard: t >= 0.0 & x1 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2111
+
+    DestId: 68
+
+    Label: tau
+
+    Guard: t >= 0.0 & x1 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1011
+
+    DestId: 32
+
+    Label: tau
+
+    Guard: t >= 0.0 & x2 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1211
+
+    DestId: 50
+
+    Label: tau
+
+    Guard: t >= 0.0 & x2 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1101
+
+    DestId: 38
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1121
+
+    DestId: 44
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1110
+
+    DestId: 40
+
+    Label: tau0
+
+    Guard: t >= 0.0 & x4 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1112
+
+    DestId: 42
+
+    Label: tau0
+
+    Guard: t >= 0.0 & x4 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+#End
+#Location
+Locname: L1112
+
+LocId: 42
+
+Inv: x1 >= 1.0 & x1 <= 2.0 & x2 >= 1.0 & x2 <= 2.0 & x3 >= 1.0 & x3 <= 2.0 & x4 >= 2.0 & x4 <= 3.0
+
+Flow:
+    t = 1.0
+    x1 = 1.3
+    x2 = -0.2
+    x3 = 0.3
+    x4 = -1.0
+#End
+
+Transition:
+
+    Dest: L0112
+
+    DestId: 15
+
+    Label: tau
+
+    Guard: t >= 0.0 & x1 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2112
+
+    DestId: 69
+
+    Label: tau
+
+    Guard: t >= 0.0 & x1 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1012
+
+    DestId: 33
+
+    Label: tau
+
+    Guard: t >= 0.0 & x2 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1212
+
+    DestId: 51
+
+    Label: tau
+
+    Guard: t >= 0.0 & x2 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1102
+
+    DestId: 39
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1122
+
+    DestId: 45
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1111
+
+    DestId: 41
+
+    Label: tau
+
+    Guard: t >= 0.0 & x4 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+#End
+#Location
+Locname: L1120
+
+LocId: 43
+
+Inv: x1 >= 1.0 & x1 <= 2.0 & x2 >= 1.0 & x2 <= 2.0 & x3 >= 2.0 & x3 <= 3.0 & x4 >= 0.0 & x4 <= 1.0
+
+Flow:
+    t = 1.0
+    x1 = 1.3
+    x2 = -0.2
+    x3 = -1.3
+    x4 = -0.2
+#End
+
+Transition:
+
+    Dest: L0120
+
+    DestId: 16
+
+    Label: tau
+
+    Guard: t >= 0.0 & x1 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2120
+
+    DestId: 70
+
+    Label: tau
+
+    Guard: t >= 0.0 & x1 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1020
+
+    DestId: 34
+
+    Label: tau
+
+    Guard: t >= 0.0 & x2 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1220
+
+    DestId: 52
+
+    Label: tau
+
+    Guard: t >= 0.0 & x2 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1110
+
+    DestId: 40
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1121
+
+    DestId: 44
+
+    Label: tau
+
+    Guard: t >= 0.0 & x4 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+#End
+#Location
+Locname: L1121
+
+LocId: 44
+
+Inv: x1 >= 1.0 & x1 <= 2.0 & x2 >= 1.0 & x2 <= 2.0 & x3 >= 2.0 & x3 <= 3.0 & x4 >= 1.0 & x4 <= 2.0
+
+Flow:
+    t = 1.0
+    x1 = 1.3
+    x2 = -0.2
+    x3 = 1.0
+    x4 = -1.3
+#End
+
+Transition:
+
+    Dest: L0121
+
+    DestId: 17
+
+    Label: tau
+
+    Guard: t >= 0.0 & x1 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2121
+
+    DestId: 71
+
+    Label: tau
+
+    Guard: t >= 0.0 & x1 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1021
+
+    DestId: 35
+
+    Label: tau
+
+    Guard: t >= 0.0 & x2 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1221
+
+    DestId: 53
+
+    Label: tau
+
+    Guard: t >= 0.0 & x2 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1111
+
+    DestId: 41
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1120
+
+    DestId: 43
+
+    Label: tau
+
+    Guard: t >= 0.0 & x4 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1122
+
+    DestId: 45
+
+    Label: tau
+
+    Guard: t >= 0.0 & x4 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+#End
+#Location
+Locname: L1122
+
+LocId: 45
+
+Inv: x1 >= 1.0 & x1 <= 2.0 & x2 >= 1.0 & x2 <= 2.0 & x3 >= 2.0 & x3 <= 3.0 & x4 >= 2.0 & x4 <= 3.0
+
+Flow:
+    t = 1.0
+    x1 = 1.3
+    x2 = -0.2
+    x3 = 1.0
+    x4 = 1.0
+#End
+
+Transition:
+
+    Dest: L0122
+
+    DestId: 18
+
+    Label: tau0
+
+    Guard: t >= 0.0 & x1 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2122
+
+    DestId: 72
+
+    Label: tau0
+
+    Guard: t >= 0.0 & x1 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1022
+
+    DestId: 36
+
+    Label: tau
+
+    Guard: t >= 0.0 & x2 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1222
+
+    DestId: 54
+
+    Label: tau
+
+    Guard: t >= 0.0 & x2 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1112
+
+    DestId: 42
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1121
+
+    DestId: 44
+
+    Label: tau
+
+    Guard: t >= 0.0 & x4 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+#End
+#Location
+Locname: L1200
+
+LocId: 46
+
+Inv: x1 >= 1.0 & x1 <= 2.0 & x2 >= 2.0 & x2 <= 3.0 & xc2 >= -0.5 & xc2 <= 0.5 & x3 >= 0.0 & x3 <= 1.0 & x4 >= 0.0 & x4 <= 1.0
+
+Flow:
+    t = 1.0
+    x1 = 0.3
+    x2 = -1.0
+    x3 = xc2
+    x4 = 1.1
+#End
+
+Transition:
+
+    Dest: L0200
+
+    DestId: 19
+
+    Label: tau
+
+    Guard: t >= 0.0 & x1 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2200
+
+    DestId: 73
+
+    Label: tau
+
+    Guard: t >= 0.0 & x1 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1100
+
+    DestId: 37
+
+    Label: tau
+
+    Guard: t >= 0.0 & x2 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1210
+
+    DestId: 49
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1201
+
+    DestId: 47
+
+    Label: tau
+
+    Guard: t >= 0.0 & x4 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+#End
+#Location
+Locname: L1201
+
+LocId: 47
+
+Inv: x1 >= 1.0 & x1 <= 2.0 & x2 >= 2.0 & x2 <= 3.0 & x3 >= 0.0 & x3 <= 1.0 & x4 >= 1.0 & x4 <= 2.0
+
+Flow:
+    t = 1.0
+    x1 = 0.3
+    x2 = -1.0
+    x3 = 0.2
+    x4 = 1.2
+#End
+
+Transition:
+
+    Dest: L0201
+
+    DestId: 20
+
+    Label: tau
+
+    Guard: t >= 0.0 & x1 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2201
+
+    DestId: 74
+
+    Label: tau
+
+    Guard: t >= 0.0 & x1 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1101
+
+    DestId: 38
+
+    Label: tau
+
+    Guard: t >= 0.0 & x2 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1211
+
+    DestId: 50
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1200
+
+    DestId: 46
+
+    Label: tau
+
+    Guard: t >= 0.0 & x4 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1202
+
+    DestId: 48
+
+    Label: tau
+
+    Guard: t >= 0.0 & x4 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+#End
+#Location
+Locname: L1202
+
+LocId: 48
+
+Inv: x1 >= 1.0 & x1 <= 2.0 & x2 >= 2.0 & x2 <= 3.0 & x3 >= 0.0 & x3 <= 1.0 & x4 >= 2.0 & x4 <= 3.0
+
+Flow:
+    t = 1.0
+    x1 = 0.3
+    x2 = -1.0
+    x3 = 1.3
+    x4 = 0.2
+#End
+
+Transition:
+
+    Dest: L0202
+
+    DestId: 21
+
+    Label: tau
+
+    Guard: t >= 0.0 & x1 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2202
+
+    DestId: 75
+
+    Label: tau
+
+    Guard: t >= 0.0 & x1 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1102
+
+    DestId: 39
+
+    Label: tau
+
+    Guard: t >= 0.0 & x2 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1212
+
+    DestId: 51
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1201
+
+    DestId: 47
+
+    Label: tau0
+
+    Guard: t >= 0.0 & x4 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+#End
+#Location
+Locname: L1210
+
+LocId: 49
+
+Inv: x1 >= 1.0 & x1 <= 2.0 & x2 >= 2.0 & x2 <= 3.0 & x3 >= 1.0 & x3 <= 2.0 & x4 >= 0.0 & x4 <= 1.0
+
+Flow:
+    t = 1.0
+    x1 = 0.3
+    x2 = -1.0
+    x3 = -1.3
+    x4 = -0.2
+#End
+
+Transition:
+
+    Dest: L0210
+
+    DestId: 22
+
+    Label: tau0
+
+    Guard: t >= 0.0 & x1 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2210
+
+    DestId: 76
+
+    Label: tau0
+
+    Guard: t >= 0.0 & x1 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1110
+
+    DestId: 40
+
+    Label: tau
+
+    Guard: t >= 0.0 & x2 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1200
+
+    DestId: 46
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1220
+
+    DestId: 52
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1211
+
+    DestId: 50
+
+    Label: tau
+
+    Guard: t >= 0.0 & x4 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+#End
+#Location
+Locname: L1211
+
+LocId: 50
+
+Inv: x1 >= 1.0 & x1 <= 2.0 & x2 >= 2.0 & x2 <= 3.0 & x3 >= 1.0 & x3 <= 2.0 & x4 >= 1.0 & x4 <= 2.0
+
+Flow:
+    t = 1.0
+    x1 = 0.3
+    x2 = -1.0
+    x3 = 1.3
+    x4 = -0.2
+#End
+
+Transition:
+
+    Dest: L0211
+
+    DestId: 23
+
+    Label: tau
+
+    Guard: t >= 0.0 & x1 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2211
+
+    DestId: 77
+
+    Label: tau
+
+    Guard: t >= 0.0 & x1 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1111
+
+    DestId: 41
+
+    Label: tau
+
+    Guard: t >= 0.0 & x2 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1201
+
+    DestId: 47
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1221
+
+    DestId: 53
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1210
+
+    DestId: 49
+
+    Label: tau
+
+    Guard: t >= 0.0 & x4 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1212
+
+    DestId: 51
+
+    Label: tau
+
+    Guard: t >= 0.0 & x4 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+#End
+#Location
+Locname: L1212
+
+LocId: 51
+
+Inv: x1 >= 1.0 & x1 <= 2.0 & x2 >= 2.0 & x2 <= 3.0 & x3 >= 1.0 & x3 <= 2.0 & x4 >= 2.0 & x4 <= 3.0
+
+Flow:
+    t = 1.0
+    x1 = 0.3
+    x2 = -1.0
+    x3 = 0.3
+    x4 = -1.0
+#End
+
+Transition:
+
+    Dest: L0212
+
+    DestId: 24
+
+    Label: tau
+
+    Guard: t >= 0.0 & x1 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2212
+
+    DestId: 78
+
+    Label: tau
+
+    Guard: t >= 0.0 & x1 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1112
+
+    DestId: 42
+
+    Label: tau
+
+    Guard: t >= 0.0 & x2 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1202
+
+    DestId: 48
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1222
+
+    DestId: 54
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1211
+
+    DestId: 50
+
+    Label: tau
+
+    Guard: t >= 0.0 & x4 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+#End
+#Location
+Locname: L1220
+
+LocId: 52
+
+Inv: x1 >= 1.0 & x1 <= 2.0 & x2 >= 2.0 & x2 <= 3.0 & x3 >= 2.0 & x3 <= 3.0 & x4 >= 0.0 & x4 <= 1.0
+
+Flow:
+    t = 1.0
+    x1 = 0.3
+    x2 = -1.0
+    x3 = -1.3
+    x4 = -0.2
+#End
+
+Transition:
+
+    Dest: L0220
+
+    DestId: 25
+
+    Label: tau
+
+    Guard: t >= 0.0 & x1 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2220
+
+    DestId: 79
+
+    Label: tau
+
+    Guard: t >= 0.0 & x1 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1120
+
+    DestId: 43
+
+    Label: tau
+
+    Guard: t >= 0.0 & x2 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1210
+
+    DestId: 49
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1221
+
+    DestId: 53
+
+    Label: tau
+
+    Guard: t >= 0.0 & x4 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+#End
+#Location
+Locname: L1221
+
+LocId: 53
+
+Inv: x1 >= 1.0 & x1 <= 2.0 & x2 >= 2.0 & x2 <= 3.0 & x3 >= 2.0 & x3 <= 3.0 & x4 >= 1.0 & x4 <= 2.0
+
+Flow:
+    t = 1.0
+    x1 = 0.3
+    x2 = -1.0
+    x3 = 1.0
+    x4 = -1.3
+#End
+
+Transition:
+
+    Dest: L0221
+
+    DestId: 26
+
+    Label: tau0
+
+    Guard: t >= 0.0 & x1 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2221
+
+    DestId: 80
+
+    Label: tau0
+
+    Guard: t >= 0.0 & x1 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1121
+
+    DestId: 44
+
+    Label: tau
+
+    Guard: t >= 0.0 & x2 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1211
+
+    DestId: 50
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1220
+
+    DestId: 52
+
+    Label: tau
+
+    Guard: t >= 0.0 & x4 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1222
+
+    DestId: 54
+
+    Label: tau
+
+    Guard: t >= 0.0 & x4 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+#End
+#Location
+Locname: L1222
+
+LocId: 54
+
+Inv: x1 >= 1.0 & x1 <= 2.0 & x2 >= 2.0 & x2 <= 3.0 & x3 >= 2.0 & x3 <= 3.0 & x4 >= 2.0 & x4 <= 3.0
+
+Flow:
+    t = 1.0
+    x1 = 0.3
+    x2 = -1.0
+    x3 = 1.0
+    x4 = 1.0
+#End
+
+Transition:
+
+    Dest: L0222
+
+    DestId: 27
+
+    Label: tau
+
+    Guard: t >= 0.0 & x1 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2222
+
+    DestId: 81
+
+    Label: tau
+
+    Guard: t >= 0.0 & x1 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1122
+
+    DestId: 45
+
+    Label: tau
+
+    Guard: t >= 0.0 & x2 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1212
+
+    DestId: 51
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L1221
+
+    DestId: 53
+
+    Label: tau
+
+    Guard: t >= 0.0 & x4 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+#End
+#Location
+Locname: L2000
+
+LocId: 55
+
+Inv: x1 >= 2.0 & x1 <= 3.0 & x2 >= 0.0 & x2 <= 1.0 & xc2 >= -0.5 & xc2 <= 0.5 & x3 >= 0.0 & x3 <= 1.0 & x4 >= 0.0 & x4 <= 1.0
+
+Flow:
+    t = 1.0
+    x1 = -1.3
+    x2 = -0.2
+    x3 = xc2
+    x4 = 1.1
+#End
+
+Transition:
+
+    Dest: L1000
+
+    DestId: 28
+
+    Label: tau
+
+    Guard: t >= 0.0 & x1 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2100
+
+    DestId: 64
+
+    Label: tau
+
+    Guard: t >= 0.0 & x2 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2010
+
+    DestId: 58
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2001
+
+    DestId: 56
+
+    Label: tau
+
+    Guard: t >= 0.0 & x4 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+#End
+#Location
+Locname: L2001
+
+LocId: 56
+
+Inv: x1 >= 2.0 & x1 <= 3.0 & x2 >= 0.0 & x2 <= 1.0 & x3 >= 0.0 & x3 <= 1.0 & x4 >= 1.0 & x4 <= 2.0
+
+Flow:
+    t = 1.0
+    x1 = -1.3
+    x2 = -0.2
+    x3 = 0.2
+    x4 = 1.2
+#End
+
+Transition:
+
+    Dest: L1001
+
+    DestId: 29
+
+    Label: tau
+
+    Guard: t >= 0.0 & x1 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2101
+
+    DestId: 65
+
+    Label: tau
+
+    Guard: t >= 0.0 & x2 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2011
+
+    DestId: 59
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2000
+
+    DestId: 55
+
+    Label: tau
+
+    Guard: t >= 0.0 & x4 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2002
+
+    DestId: 57
+
+    Label: tau
+
+    Guard: t >= 0.0 & x4 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+#End
+#Location
+Locname: L2002
+
+LocId: 57
+
+Inv: x1 >= 2.0 & x1 <= 3.0 & x2 >= 0.0 & x2 <= 1.0 & x3 >= 0.0 & x3 <= 1.0 & x4 >= 2.0 & x4 <= 3.0
+
+Flow:
+    t = 1.0
+    x1 = -1.3
+    x2 = -0.2
+    x3 = 1.3
+    x4 = 0.2
+#End
+
+Transition:
+
+    Dest: L1002
+
+    DestId: 30
+
+    Label: tau
+
+    Guard: t >= 0.0 & x1 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2102
+
+    DestId: 66
+
+    Label: tau
+
+    Guard: t >= 0.0 & x2 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2012
+
+    DestId: 60
+
+    Label: tau0
+
+    Guard: t >= 0.0 & x3 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2001
+
+    DestId: 56
+
+    Label: tau
+
+    Guard: t >= 0.0 & x4 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+#End
+#Location
+Locname: L2010
+
+LocId: 58
+
+Inv: x1 >= 2.0 & x1 <= 3.0 & x2 >= 0.0 & x2 <= 1.0 & x3 >= 1.0 & x3 <= 2.0 & x4 >= 0.0 & x4 <= 1.0
+
+Flow:
+    t = 1.0
+    x1 = -1.3
+    x2 = -0.2
+    x3 = -1.3
+    x4 = -0.2
+#End
+
+Transition:
+
+    Dest: L1010
+
+    DestId: 31
+
+    Label: tau
+
+    Guard: t >= 0.0 & x1 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2110
+
+    DestId: 67
+
+    Label: tau
+
+    Guard: t >= 0.0 & x2 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2000
+
+    DestId: 55
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2020
+
+    DestId: 61
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2011
+
+    DestId: 59
+
+    Label: tau
+
+    Guard: t >= 0.0 & x4 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+#End
+#Location
+Locname: L2011
+
+LocId: 59
+
+Inv: x1 >= 2.0 & x1 <= 3.0 & x2 >= 0.0 & x2 <= 1.0 & x3 >= 1.0 & x3 <= 2.0 & x4 >= 1.0 & x4 <= 2.0
+
+Flow:
+    t = 1.0
+    x1 = -1.3
+    x2 = -0.2
+    x3 = 1.3
+    x4 = -0.2
+#End
+
+Transition:
+
+    Dest: L1011
+
+    DestId: 32
+
+    Label: tau
+
+    Guard: t >= 0.0 & x1 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2111
+
+    DestId: 68
+
+    Label: tau
+
+    Guard: t >= 0.0 & x2 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2001
+
+    DestId: 56
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2021
+
+    DestId: 62
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2010
+
+    DestId: 58
+
+    Label: tau
+
+    Guard: t >= 0.0 & x4 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2012
+
+    DestId: 60
+
+    Label: tau
+
+    Guard: t >= 0.0 & x4 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+#End
+#Location
+Locname: L2012
+
+LocId: 60
+
+Inv: x1 >= 2.0 & x1 <= 3.0 & x2 >= 0.0 & x2 <= 1.0 & x3 >= 1.0 & x3 <= 2.0 & x4 >= 2.0 & x4 <= 3.0
+
+Flow:
+    t = 1.0
+    x1 = -1.3
+    x2 = -0.2
+    x3 = 0.3
+    x4 = -1.0
+#End
+
+Transition:
+
+    Dest: L1012
+
+    DestId: 33
+
+    Label: tau
+
+    Guard: t >= 0.0 & x1 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2112
+
+    DestId: 69
+
+    Label: tau
+
+    Guard: t >= 0.0 & x2 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2002
+
+    DestId: 57
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2022
+
+    DestId: 63
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2011
+
+    DestId: 59
+
+    Label: tau
+
+    Guard: t >= 0.0 & x4 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+#End
+#Location
+Locname: L2020
+
+LocId: 61
+
+Inv: x1 >= 2.0 & x1 <= 3.0 & x2 >= 0.0 & x2 <= 1.0 & x3 >= 2.0 & x3 <= 3.0 & x4 >= 0.0 & x4 <= 1.0
+
+Flow:
+    t = 1.0
+    x1 = -1.3
+    x2 = -0.2
+    x3 = -1.3
+    x4 = -0.2
+#End
+
+Transition:
+
+    Dest: L1020
+
+    DestId: 34
+
+    Label: tau
+
+    Guard: t >= 0.0 & x1 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2120
+
+    DestId: 70
+
+    Label: tau
+
+    Guard: t >= 0.0 & x2 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2010
+
+    DestId: 58
+
+    Label: tau0
+
+    Guard: t >= 0.0 & x3 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2021
+
+    DestId: 62
+
+    Label: tau0
+
+    Guard: t >= 0.0 & x4 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+#End
+#Location
+Locname: L2021
+
+LocId: 62
+
+Inv: x1 >= 2.0 & x1 <= 3.0 & x2 >= 0.0 & x2 <= 1.0 & x3 >= 2.0 & x3 <= 3.0 & x4 >= 1.0 & x4 <= 2.0
+
+Flow:
+    t = 1.0
+    x1 = -1.3
+    x2 = -0.2
+    x3 = 1.0
+    x4 = -1.3
+#End
+
+Transition:
+
+    Dest: L1021
+
+    DestId: 35
+
+    Label: tau
+
+    Guard: t >= 0.0 & x1 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2121
+
+    DestId: 71
+
+    Label: tau
+
+    Guard: t >= 0.0 & x2 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2011
+
+    DestId: 59
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2020
+
+    DestId: 61
+
+    Label: tau
+
+    Guard: t >= 0.0 & x4 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2022
+
+    DestId: 63
+
+    Label: tau
+
+    Guard: t >= 0.0 & x4 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+#End
+#Location
+Locname: L2022
+
+LocId: 63
+
+Inv: x1 >= 2.0 & x1 <= 3.0 & x2 >= 0.0 & x2 <= 1.0 & x3 >= 2.0 & x3 <= 3.0 & x4 >= 2.0 & x4 <= 3.0
+
+Flow:
+    t = 1.0
+    x1 = -1.3
+    x2 = -0.2
+    x3 = 1.0
+    x4 = 1.0
+#End
+
+Transition:
+
+    Dest: L1022
+
+    DestId: 36
+
+    Label: tau
+
+    Guard: t >= 0.0 & x1 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2122
+
+    DestId: 72
+
+    Label: tau
+
+    Guard: t >= 0.0 & x2 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2012
+
+    DestId: 60
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2021
+
+    DestId: 62
+
+    Label: tau
+
+    Guard: t >= 0.0 & x4 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+#End
+#Location
+Locname: L2100
+
+LocId: 64
+
+Inv: x1 >= 2.0 & x1 <= 3.0 & x2 >= 1.0 & x2 <= 2.0 & xc2 >= -0.5 & xc2 <= 0.5 & x3 >= 0.0 & x3 <= 1.0 & x4 >= 0.0 & x4 <= 1.0
+
+Flow:
+    t = 1.0
+    x1 = 1.0
+    x2 = -1.3
+    x3 = xc2
+    x4 = 1.1
+#End
+
+Transition:
+
+    Dest: L1100
+
+    DestId: 37
+
+    Label: tau
+
+    Guard: t >= 0.0 & x1 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2000
+
+    DestId: 55
+
+    Label: tau
+
+    Guard: t >= 0.0 & x2 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2200
+
+    DestId: 73
+
+    Label: tau
+
+    Guard: t >= 0.0 & x2 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2110
+
+    DestId: 67
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2101
+
+    DestId: 65
+
+    Label: tau
+
+    Guard: t >= 0.0 & x4 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+#End
+#Location
+Locname: L2101
+
+LocId: 65
+
+Inv: x1 >= 2.0 & x1 <= 3.0 & x2 >= 1.0 & x2 <= 2.0 & x3 >= 0.0 & x3 <= 1.0 & x4 >= 1.0 & x4 <= 2.0
+
+Flow:
+    t = 1.0
+    x1 = 1.0
+    x2 = -1.3
+    x3 = 0.2
+    x4 = 1.2
+#End
+
+Transition:
+
+    Dest: L1101
+
+    DestId: 38
+
+    Label: tau
+
+    Guard: t >= 0.0 & x1 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2001
+
+    DestId: 56
+
+    Label: tau
+
+    Guard: t >= 0.0 & x2 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2201
+
+    DestId: 74
+
+    Label: tau
+
+    Guard: t >= 0.0 & x2 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2111
+
+    DestId: 68
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2100
+
+    DestId: 64
+
+    Label: tau
+
+    Guard: t >= 0.0 & x4 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2102
+
+    DestId: 66
+
+    Label: tau
+
+    Guard: t >= 0.0 & x4 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+#End
+#Location
+Locname: L2102
+
+LocId: 66
+
+Inv: x1 >= 2.0 & x1 <= 3.0 & x2 >= 1.0 & x2 <= 2.0 & x3 >= 0.0 & x3 <= 1.0 & x4 >= 2.0 & x4 <= 3.0
+
+Flow:
+    t = 1.0
+    x1 = 1.0
+    x2 = -1.3
+    x3 = 1.3
+    x4 = 0.2
+#End
+
+Transition:
+
+    Dest: L1102
+
+    DestId: 39
+
+    Label: tau0
+
+    Guard: t >= 0.0 & x1 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2002
+
+    DestId: 57
+
+    Label: tau0
+
+    Guard: t >= 0.0 & x2 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2202
+
+    DestId: 75
+
+    Label: tau0
+
+    Guard: t >= 0.0 & x2 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2112
+
+    DestId: 69
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2101
+
+    DestId: 65
+
+    Label: tau
+
+    Guard: t >= 0.0 & x4 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+#End
+#Location
+Locname: L2110
+
+LocId: 67
+
+Inv: x1 >= 2.0 & x1 <= 3.0 & x2 >= 1.0 & x2 <= 2.0 & x3 >= 1.0 & x3 <= 2.0 & x4 >= 0.0 & x4 <= 1.0
+
+Flow:
+    t = 1.0
+    x1 = 1.0
+    x2 = -1.3
+    x3 = -1.3
+    x4 = -0.2
+#End
+
+Transition:
+
+    Dest: L1110
+
+    DestId: 40
+
+    Label: tau
+
+    Guard: t >= 0.0 & x1 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2010
+
+    DestId: 58
+
+    Label: tau
+
+    Guard: t >= 0.0 & x2 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2210
+
+    DestId: 76
+
+    Label: tau
+
+    Guard: t >= 0.0 & x2 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2100
+
+    DestId: 64
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2120
+
+    DestId: 70
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2111
+
+    DestId: 68
+
+    Label: tau
+
+    Guard: t >= 0.0 & x4 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+#End
+#Location
+Locname: L2111
+
+LocId: 68
+
+Inv: x1 >= 2.0 & x1 <= 3.0 & x2 >= 1.0 & x2 <= 2.0 & x3 >= 1.0 & x3 <= 2.0 & x4 >= 1.0 & x4 <= 2.0
+
+Flow:
+    t = 1.0
+    x1 = 1.0
+    x2 = -1.3
+    x3 = 1.3
+    x4 = -0.2
+#End
+
+Transition:
+
+    Dest: L1111
+
+    DestId: 41
+
+    Label: tau
+
+    Guard: t >= 0.0 & x1 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2011
+
+    DestId: 59
+
+    Label: tau
+
+    Guard: t >= 0.0 & x2 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2211
+
+    DestId: 77
+
+    Label: tau
+
+    Guard: t >= 0.0 & x2 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2101
+
+    DestId: 65
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2121
+
+    DestId: 71
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2110
+
+    DestId: 67
+
+    Label: tau
+
+    Guard: t >= 0.0 & x4 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2112
+
+    DestId: 69
+
+    Label: tau
+
+    Guard: t >= 0.0 & x4 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+#End
+#Location
+Locname: L2112
+
+LocId: 69
+
+Inv: x1 >= 2.0 & x1 <= 3.0 & x2 >= 1.0 & x2 <= 2.0 & x3 >= 1.0 & x3 <= 2.0 & x4 >= 2.0 & x4 <= 3.0
+
+Flow:
+    t = 1.0
+    x1 = 1.0
+    x2 = -1.3
+    x3 = 0.3
+    x4 = -1.0
+#End
+
+Transition:
+
+    Dest: L1112
+
+    DestId: 42
+
+    Label: tau
+
+    Guard: t >= 0.0 & x1 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2012
+
+    DestId: 60
+
+    Label: tau
+
+    Guard: t >= 0.0 & x2 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2212
+
+    DestId: 78
+
+    Label: tau
+
+    Guard: t >= 0.0 & x2 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2102
+
+    DestId: 66
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2122
+
+    DestId: 72
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2111
+
+    DestId: 68
+
+    Label: tau00
+
+    Guard: t >= 0.0 & x4 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+#End
+#Location
+Locname: L2120
+
+LocId: 70
+
+Inv: x1 >= 2.0 & x1 <= 3.0 & x2 >= 1.0 & x2 <= 2.0 & x3 >= 2.0 & x3 <= 3.0 & x4 >= 0.0 & x4 <= 1.0
+
+Flow:
+    t = 1.0
+    x1 = 1.0
+    x2 = -1.3
+    x3 = -1.3
+    x4 = -0.2
+#End
+
+Transition:
+
+    Dest: L1120
+
+    DestId: 43
+
+    Label: tau00
+
+    Guard: t >= 0.0 & x1 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2020
+
+    DestId: 61
+
+    Label: tau00
+
+    Guard: t >= 0.0 & x2 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2220
+
+    DestId: 79
+
+    Label: tau00
+
+    Guard: t >= 0.0 & x2 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2110
+
+    DestId: 67
+
+    Label: tau01
+
+    Guard: t >= 0.0 & x3 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2121
+
+    DestId: 71
+
+    Label: tau01
+
+    Guard: t >= 0.0 & x4 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+#End
+#Location
+Locname: L2121
+
+LocId: 71
+
+Inv: x1 >= 2.0 & x1 <= 3.0 & x2 >= 1.0 & x2 <= 2.0 & x3 >= 2.0 & x3 <= 3.0 & x4 >= 1.0 & x4 <= 2.0
+
+Flow:
+    t = 1.0
+    x1 = 1.0
+    x2 = -1.3
+    x3 = 1.0
+    x4 = -1.3
+#End
+
+Transition:
+
+    Dest: L1121
+
+    DestId: 44
+
+    Label: tau02
+
+    Guard: t >= 0.0 & x1 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2021
+
+    DestId: 62
+
+    Label: tau02
+
+    Guard: t >= 0.0 & x2 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2221
+
+    DestId: 80
+
+    Label: tau02
+
+    Guard: t >= 0.0 & x2 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2111
+
+    DestId: 68
+
+    Label: tau03
+
+    Guard: t >= 0.0 & x3 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2120
+
+    DestId: 70
+
+    Label: tau03
+
+    Guard: t >= 0.0 & x4 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2122
+
+    DestId: 72
+
+    Label: tau03
+
+    Guard: t >= 0.0 & x4 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+#End
+#Location
+Locname: L2122
+
+LocId: 72
+
+Inv: x1 >= 2.0 & x1 <= 3.0 & x2 >= 1.0 & x2 <= 2.0 & x3 >= 2.0 & x3 <= 3.0 & x4 >= 2.0 & x4 <= 3.0
+
+Flow:
+    t = 1.0
+    x1 = 1.0
+    x2 = -1.3
+    x3 = 1.0
+    x4 = 1.0
+#End
+
+Transition:
+
+    Dest: L1122
+
+    DestId: 45
+
+    Label: tau04
+
+    Guard: t >= 0.0 & x1 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2022
+
+    DestId: 63
+
+    Label: tau04
+
+    Guard: t >= 0.0 & x2 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2222
+
+    DestId: 81
+
+    Label: tau04
+
+    Guard: t >= 0.0 & x2 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2112
+
+    DestId: 69
+
+    Label: tau05
+
+    Guard: t >= 0.0 & x3 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2121
+
+    DestId: 71
+
+    Label: tau05
+
+    Guard: t >= 0.0 & x4 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+#End
+#Location
+Locname: L2200
+
+LocId: 73
+
+Inv: x1 >= 2.0 & x1 <= 3.0 & x2 >= 2.0 & x2 <= 3.0 & xc2 >= -0.5 & xc2 <= 0.5 & x3 >= 0.0 & x3 <= 1.0 & x4 >= 0.0 & x4 <= 1.0
+
+Flow:
+    t = 1.0
+    x1 = 1.0
+    x2 = 1.0
+    x3 = xc2
+    x4 = 1.1
+#End
+
+Transition:
+
+    Dest: L1200
+
+    DestId: 46
+
+    Label: tau05
+
+    Guard: t >= 0.0 & x1 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2100
+
+    DestId: 64
+
+    Label: tau05
+
+    Guard: t >= 0.0 & x2 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2210
+
+    DestId: 76
+
+    Label: tau05
+
+    Guard: t >= 0.0 & x3 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2201
+
+    DestId: 74
+
+    Label: tau06
+
+    Guard: t >= 0.0 & x4 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+#End
+#Location
+Locname: L2201
+
+LocId: 74
+
+Inv: x1 >= 2.0 & x1 <= 3.0 & x2 >= 2.0 & x2 <= 3.0 & x3 >= 0.0 & x3 <= 1.0 & x4 >= 1.0 & x4 <= 2.0
+
+Flow:
+    t = 1.0
+    x1 = 1.0
+    x2 = 1.0
+    x3 = 0.2
+    x4 = 1.2
+#End
+
+Transition:
+
+    Dest: L1201
+
+    DestId: 47
+
+    Label: tau07
+
+    Guard: t >= 0.0 & x1 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2101
+
+    DestId: 65
+
+    Label: tau07
+
+    Guard: t >= 0.0 & x2 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2211
+
+    DestId: 77
+
+    Label: tau07
+
+    Guard: t >= 0.0 & x3 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2200
+
+    DestId: 73
+
+    Label: tau08
+
+    Guard: t >= 0.0 & x4 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2202
+
+    DestId: 75
+
+    Label: tau08
+
+    Guard: t >= 0.0 & x4 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+#End
+#Location
+Locname: L2202
+
+LocId: 75
+
+Inv: x1 >= 2.0 & x1 <= 3.0 & x2 >= 2.0 & x2 <= 3.0 & x3 >= 0.0 & x3 <= 1.0 & x4 >= 2.0 & x4 <= 3.0
+
+Flow:
+    t = 1.0
+    x1 = 1.0
+    x2 = 1.0
+    x3 = 1.3
+    x4 = 0.2
+#End
+
+Transition:
+
+    Dest: L1202
+
+    DestId: 48
+
+    Label: tau09
+
+    Guard: t >= 0.0 & x1 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2102
+
+    DestId: 66
+
+    Label: tau09
+
+    Guard: t >= 0.0 & x2 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2212
+
+    DestId: 78
+
+    Label: tau09
+
+    Guard: t >= 0.0 & x3 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2201
+
+    DestId: 74
+
+    Label: tau0
+
+    Guard: t >= 0.0 & x4 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+#End
+#Location
+Locname: L2210
+
+LocId: 76
+
+Inv: x1 >= 2.0 & x1 <= 3.0 & x2 >= 2.0 & x2 <= 3.0 & x3 >= 1.0 & x3 <= 2.0 & x4 >= 0.0 & x4 <= 1.0
+
+Flow:
+    t = 1.0
+    x1 = 1.0
+    x2 = 1.0
+    x3 = -1.3
+    x4 = -0.2
+#End
+
+Transition:
+
+    Dest: L1210
+
+    DestId: 49
+
+    Label: tau0
+
+    Guard: t >= 0.0 & x1 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2110
+
+    DestId: 67
+
+    Label: tau0
+
+    Guard: t >= 0.0 & x2 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2200
+
+    DestId: 73
+
+    Label: tau0
+
+    Guard: t >= 0.0 & x3 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2220
+
+    DestId: 79
+
+    Label: tau0
+
+    Guard: t >= 0.0 & x3 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2211
+
+    DestId: 77
+
+    Label: tau
+
+    Guard: t >= 0.0 & x4 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+#End
+#Location
+Locname: L2211
+
+LocId: 77
+
+Inv: x1 >= 2.0 & x1 <= 3.0 & x2 >= 2.0 & x2 <= 3.0 & x3 >= 1.0 & x3 <= 2.0 & x4 >= 1.0 & x4 <= 2.0
+
+Flow:
+    t = 1.0
+    x1 = 1.0
+    x2 = 1.0
+    x3 = 1.3
+    x4 = -0.2
+#End
+
+Transition:
+
+    Dest: L1211
+
+    DestId: 50
+
+    Label: tau
+
+    Guard: t >= 0.0 & x1 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2111
+
+    DestId: 68
+
+    Label: tau
+
+    Guard: t >= 0.0 & x2 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2201
+
+    DestId: 74
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2221
+
+    DestId: 80
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2210
+
+    DestId: 76
+
+    Label: tau
+
+    Guard: t >= 0.0 & x4 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2212
+
+    DestId: 78
+
+    Label: tau
+
+    Guard: t >= 0.0 & x4 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+#End
+#Location
+Locname: L2212
+
+LocId: 78
+
+Inv: x1 >= 2.0 & x1 <= 3.0 & x2 >= 2.0 & x2 <= 3.0 & x3 >= 1.0 & x3 <= 2.0 & x4 >= 2.0 & x4 <= 3.0
+
+Flow:
+    t = 1.0
+    x1 = 1.0
+    x2 = 1.0
+    x3 = 0.3
+    x4 = -1.0
+#End
+
+Transition:
+
+    Dest: L1212
+
+    DestId: 51
+
+    Label: tau
+
+    Guard: t >= 0.0 & x1 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2112
+
+    DestId: 69
+
+    Label: tau
+
+    Guard: t >= 0.0 & x2 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2202
+
+    DestId: 75
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2222
+
+    DestId: 81
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2211
+
+    DestId: 77
+
+    Label: tau
+
+    Guard: t >= 0.0 & x4 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+#End
+#Location
+Locname: L2220
+
+LocId: 79
+
+Inv: x1 >= 2.0 & x1 <= 3.0 & x2 >= 2.0 & x2 <= 3.0 & x3 >= 2.0 & x3 <= 3.0 & x4 >= 0.0 & x4 <= 1.0
+
+Flow:
+    t = 1.0
+    x1 = 1.0
+    x2 = 1.0
+    x3 = -1.3
+    x4 = -0.2
+#End
+
+Transition:
+
+    Dest: L1220
+
+    DestId: 52
+
+    Label: tau
+
+    Guard: t >= 0.0 & x1 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2120
+
+    DestId: 70
+
+    Label: tau
+
+    Guard: t >= 0.0 & x2 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2210
+
+    DestId: 76
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2221
+
+    DestId: 80
+
+    Label: tau
+
+    Guard: t >= 0.0 & x4 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+#End
+#Location
+Locname: L2221
+
+LocId: 80
+
+Inv: x1 >= 2.0 & x1 <= 3.0 & x2 >= 2.0 & x2 <= 3.0 & x3 >= 2.0 & x3 <= 3.0 & x4 >= 1.0 & x4 <= 2.0
+
+Flow:
+    t = 1.0
+    x1 = 1.0
+    x2 = 1.0
+    x3 = 1.0
+    x4 = -1.3
+#End
+
+Transition:
+
+    Dest: L1221
+
+    DestId: 53
+
+    Label: tau
+
+    Guard: t >= 0.0 & x1 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2121
+
+    DestId: 71
+
+    Label: tau
+
+    Guard: t >= 0.0 & x2 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2211
+
+    DestId: 77
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2220
+
+    DestId: 79
+
+    Label: tau
+
+    Guard: t >= 0.0 & x4 = 1.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2222
+
+    DestId: 81
+
+    Label: tau
+
+    Guard: t >= 0.0 & x4 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+#End
+#Location
+Locname: L2222
+
+LocId: 81
+
+Inv: x1 >= 2.0 & x1 <= 3.0 & x2 >= 2.0 & x2 <= 3.0 & x3 >= 2.0 & x3 <= 3.0 & x4 >= 2.0 & x4 <= 3.0
+
+Flow:
+    t = 1.0
+    x1 = 1.0
+    x2 = 1.0
+    x3 = 1.0
+    x4 = 1.0
+#End
+
+Transition:
+
+    Dest: L1222
+
+    DestId: 54
+
+    Label: tau
+
+    Guard: t >= 0.0 & x1 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2122
+
+    DestId: 72
+
+    Label: tau
+
+    Guard: t >= 0.0 & x2 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2212
+
+    DestId: 78
+
+    Label: tau
+
+    Guard: t >= 0.0 & x3 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: L2221
+
+    DestId: 80
+
+    Label: tau
+
+    Guard: t >= 0.0 & x4 = 2.0
+
+    Reset:
+
+        t' = 0.0
+
+    #End
+
+#End
+#End
+
+#Init
+
+loc=L0000: t = 0.0 & x1 = 0.0 & x2 = 0.0 & x3 = 0.0 & x4 = 0.0 & xc1 = -0.11989018321037292 & xc2 = -0.3003741502761841
+
+#Forbidden
+
+L1111: true

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="15.0.1" class="java.beans.XMLDecoder">
+ <object class="com.verivital.hyst.main.GuiState" id="GuiState0">
+  <void property="cfg">
+   <string>/home/iacs/eclipse-workspace/XSpeed-plan/testcases/ARCH2020/disc/DISC02-UBS02.cfg</string>
+  </void>
+  <void property="debugMode">
+   <int>2</int>
+  </void>
+  <void property="printerIndex">
+   <int>6</int>
+  </void>
+  <void property="printerParams">
+   <void method="add">
+    <string></string>
+   </void>
+   <void method="add">
+    <string></string>
+   </void>
+   <void method="add">
+    <string></string>
+   </void>
+   <void method="add">
+    <string></string>
+   </void>
+   <void method="add">
+    <string></string>
+   </void>
+   <void method="add">
+    <string></string>
+   </void>
+   <void method="add">
+    <string></string>
+   </void>
+   <void method="add">
+    <string></string>
+   </void>
+   <void method="add">
+    <string></string>
+   </void>
+   <void method="add">
+    <string></string>
+   </void>
+  </void>
+  <void property="xml">
+   <string>/home/iacs/eclipse-workspace/XSpeed-plan/testcases/ARCH2020/disc/DISC02-UBS02.xml</string>
+  </void>
+ </object>
+</java>
